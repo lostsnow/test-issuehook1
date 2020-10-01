@@ -33,7 +33,7 @@ pipeline {
 
         stage('notifyFail') {
           steps {
-            mattermostSend 'FAILED: Job \'${env.JOB_NAME} [${env.BUILD_NUMBER}]\' (${env.BUILD_URL})'
+            mattermostSend 'FAILED: Job \'${JOB_NAME} [${BUILD_NUMBER}]\' (${BUILD_URL})'
           }
         }
 
