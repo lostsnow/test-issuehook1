@@ -4,6 +4,7 @@ pipeline {
     stage('start') {
       steps {
         echo 'start'
+        git(url: 'https://github.com/lostsnow/test-issuehook1.git', branch: 'master', changelog: true)
       }
     }
 
